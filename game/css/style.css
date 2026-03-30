@@ -1,0 +1,161 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+#main-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: fit-content;
+  margin: auto;
+}
+
+#main-box div {
+  background-color: #b4b4b4;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  /* border: 1px solid #fff; */
+  border-radius: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  width: 70px;
+}
+
+#main-box div:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 48px) {
+  #main-box div {
+    width: 30px;
+    font-size: 1rem;
+  }
+
+  #main-box {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+#new-box {
+  /* background-color: rgb(218, 218, 127); */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* #winner {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: colorCycle 3s linear infinite;
+}
+
+@keyframes colorCycle {
+  10% { color: rgb(102, 255, 0); }
+  20% { color: orange; }
+  30% { color: yellow; }
+  40% { color: green; }
+  50% { color: purple; }
+ 60% { color: pink; }
+ 70% { color: brown; }
+  80% { color: blue; }
+   90% { color: rgb(255, 0, 119); }
+    100% { color: rgb(0, 255, 55); }
+ 
+} */
+
+#winner {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, red, yellow, green, blue, orange, purple);
+  background-size: 1200% 1200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s ease infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+#memory-game{
+  text-align: center;
+}
+
+#winner {
+  color: black;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 9em;
+  line-height: 1.1;
+}
+
+#one div {
+  transition: background-color 1s ease;
+}
+
+#two div {
+  transition: background-color 1s ease;
+}
+
+
+
+#grid-size {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  height: max-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent ; 
+
+  padding: 10px; 
+  z-index: 1000; 
+}
+.small-input{
+    background-color: transparent ; 
+
+}
+
+
+
+.small-input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  
+}
+
+input[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+#submit-btn{
+  background-color: black;
+}

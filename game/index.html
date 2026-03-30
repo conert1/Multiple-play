@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Memory Game</title>
+  </head>
+
+  <body>
+    <div id="memory-game">
+      <h1>Memory Game</h1>
+      <!-- <p id="styling text">Welcome to the memory game, on the left you have the option of choosing your grid size<br>
+        choose whatever size you want ie 2x6, 3x4, 4x4 etc there are 25 different combinations.
+        <br> Make sure that the grid size is an even number (3x5 cannot exist because there will always be one unmatched block).
+        <br> There can be a maximum of 16 blocks so combinations like 5x4 cannot exist make sure blocks<=16.
+      </p> -->
+      <img src="./pics/psl.png" alt="">
+    </div>
+    <div id="grid-size">
+      <p><b>Please enter your grid size</b> </p>
+      
+        <input
+          type="number"
+          name=""
+          id="width"
+          class="small-input"
+          min="0"
+          max="8"
+        />
+        X
+        <input
+          type="number"
+          name=""
+          id="height"
+          class="small-input"
+          min="0"
+          max="8"
+        />
+      </p>
+      <input type="button" value="SUBMIT" id="submit-btn" />
+    </div>
+
+    <div id="new-box" style="display: none">
+      <div id="winner">
+        <p>YOU HAVE <br />WON</p>
+        <div class="firework-container">
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+</div>
+
+
+        
+      </div>
+      <!-- this is new -->
+      <div id="sec">
+        <p>Time Elapsed: <span id="timer">0</span> seconds</p>
+      </div>
+      
+    </div>
+
+    <div id="outer-box">
+      <div id="main-box">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+        <div id="seven"></div>
+        <div id="eight"></div>
+        <div id="nine"></div>
+        <div id="ten"></div>
+        <div id="eleven"></div>
+        <div id="twelve"></div>
+        <div id="thirteen"></div>
+        <div id="fourteen"></div>
+        <div id="fifteen"></div>
+        <div id="sixteen"></div>
+      </div>
+    </div>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
