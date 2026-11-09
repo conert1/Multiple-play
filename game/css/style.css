@@ -159,3 +159,12 @@ input[type="button"]:hover {
 #submit-btn{
   background-color: black;
 }
+
+#logo-image {
+  width: 200px;                 /* Change to your desired width */
+  height: 200px;                /* Change to your desired height */
+  background-size: contain;     /* Fits the image inside the box */
+  background-repeat: no-repeat; /* Stops it from repeating */
+  background-position: center;  /* Centers the image */
+  text-indent: -9999px;         /* Hides the "dddddddd" text safely */
+}
