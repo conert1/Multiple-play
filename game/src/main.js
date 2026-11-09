@@ -20,7 +20,12 @@ class Game {
       timerEl.textContent = this.variables.seconds;
     }, 1000);
 
-    document.body.style.backgroundImage = "url('./pics/FNB-Stadium-2.jpg')";
+    // document.body.style.backgroundImage = "url('./pics/FNB-Stadium-2.jpg')";
+
+    document.body.style.backgroundImage = "url('./pics/wembly.png')";
+
+
+
 // document.body.style.backgroundSize = "cover";
 // document.body.style.backgroundSize = "contain";   // fits whole image
 // document.body.style.backgroundPosition = "center";
@@ -28,11 +33,12 @@ class Game {
 
 
     let fileNum = "psl"
+    let fileNum1 = "epl"
     this.colors = {
-      1: ["red", `url('./pics/${fileNum}/${1}.png')`],
-      2: ["orange", `url('./pics/${fileNum}/${2}.png')`],
-      3: ["yellow", `url('./pics/${fileNum}/${3}.png')`],
-      4: ["green", `url('./pics/${fileNum}/${4}.png')`],
+      1: ["red", `url('./pics/${fileNum1}/${1}.png')`],
+      2: ["orange", `url('./pics/${fileNum1}/${2}.png')`],
+      3: ["yellow", `url('./pics/${fileNum1}/${3}.png')`],
+      4: ["green", `url('./pics/${fileNum1}/${4}.png')`],
       5: ["purple", `url('./pics/${fileNum}/${5}.png')`],
       6: ["pink", `url('./pics/${fileNum}/${6}.png')`],
       7: ["brown", `url('./pics/${fileNum}/${7}.png')`],
