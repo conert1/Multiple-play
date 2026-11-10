@@ -1,7 +1,29 @@
+
 body {
   height: 100%;
   margin: 0;
 }
+
+/* Full-size screens */
+@media (min-width: 1024px) and (min-height: 700px) {
+  body {
+    animation: stadiumZoom 15s ease-in-out infinite alternate;
+  }
+
+  @keyframes stadiumZoom {
+    from {
+      background-size: 150% auto;
+    }
+
+    to {
+      background-size: 110% auto;
+    }
+  }
+}
+
+
+
+
 
 
 #main-box {
@@ -168,3 +190,5 @@ input[type="button"]:hover {
   background-position: center;  /* Centers the image */
   text-indent: -9999px;         /* Hides the "dddddddd" text safely */
 }
+
+
