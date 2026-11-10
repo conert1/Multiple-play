@@ -21,16 +21,6 @@ class Game {
       timerEl.textContent = this.variables.seconds;
     }, 1000);
 
-    // document.body.style.backgroundImage = "url('./pics/FNB-Stadium-2.jpg')";
-
-    // document.body.style.backgroundImage = "url('./pics/wembly.png')";
-
-
-
-// document.body.style.backgroundSize = "cover";
-// document.body.style.backgroundSize = "contain";   // fits whole image
-// document.body.style.backgroundPosition = "center";
-// document.body.style.backgroundRepeat = "no-repeat";
 
 
     let fileNum = "psl"
@@ -38,11 +28,12 @@ class Game {
     if(league == "betway-premiership"){
       fileNum = "psl"
       stadium = "FNB-Stadium-2.jpg"
+      document.getElementById("logo-image").src = `./pics/psl.png`;
+
     }else if(league == "premier-league"){
       fileNum = "epl"
-      stadium = "wembly.png"
+      stadium = "Wembley.png"
       document.getElementById("logo-image").src = `./pics/epl.png`;
-      // document.getElementById("logo-image") = `url('./pics/${fileNum}/${1}.png')`
 
 
     }
