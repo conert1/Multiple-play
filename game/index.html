@@ -23,7 +23,7 @@
 
 
     </div>
-    <div id="grid-size">
+    <div id="grid-size" style="display: block;">
       <p><b>Please enter your grid size</b> </p>
       
         <input
@@ -56,7 +56,7 @@
 
     </div>
 
-    <div id="new-box" style="display: none">
+    <!-- <div id="new-box" style="display: none">
       <div id="winner">
         <p>YOU HAVE <br />WON</p>
         <div class="firework-container">
@@ -67,19 +67,38 @@
   <div class="firework"></div>
   <div class="firework"></div>
   <div class="firework"></div>
-</div>
+</div> -->
 
+
+
+
+
+<div id="new-box" style="display: none;">
+  <div class="win-icon">🏆</div>
+
+  <h2>YOU WON!</h2>
+
+  <p>Congratulations!</p>
+<!-- 
+  <p>Matches: <strong>10</strong></p>
+
+  <p>Time: <strong>45 seconds</strong></p>
+
+  <p>Attempts: <strong>20</strong></p> -->
+
+  <button onclick="location.reload()">Play Again</button>
+</div>
 
         
       </div>
       <!-- this is new -->
-      <div id="sec">
+      <div id="sec" style="display: none;">
         <p>Time Elapsedoooooooooooooooooooooooooooooooooooooooooooooooo: <span id="timer">0</span> seconds</p>
       </div>
       
     </div>
 
-    <div id="outer-box">
+    <div id="outer-box" style="display: none;">
       <div id="main-box">
         <div id="one"></div>
         <div id="two"></div>

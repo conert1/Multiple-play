@@ -9,7 +9,7 @@ function setupGame(gridWidth, gridHeight, newLeague) {
   width = gridWidth;
   height = gridHeight;
   league = newLeague
-  if (width * height > 16 || (width * height) % 2 !== 0) {
+  if (width * height > 16 || (width * height) % 2 !== 0 || width*height == 0) {
     alert("Invalid: please enter a valid grid size <br> read the instructions");
     return;
   }
@@ -39,6 +39,7 @@ submitButton.addEventListener("click", () => {
   const newWidth = document.getElementById("width").value;
   const newHeight = document.getElementById("height").value;
   const newLeague = document.getElementById("league").value;
+  document.getElementById("grid-size").style.display = "none"
   setupGame(newWidth, newHeight, newLeague);
 });
 document.addEventListener("DOMContentLoaded", () => {

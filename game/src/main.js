@@ -22,6 +22,7 @@ class Game {
     }, 1000);
 
 
+    document.getElementById("outer-box").style.display ="block"
 
     let fileNum = "psl"
     let stadium = ""
@@ -188,8 +189,8 @@ class Game {
 
   hasWon() {
     if (this.variables.matches >= this.numberOfItems() / 2) {
-      document.getElementById("outer-box").style.display = "none";
-      document.getElementById("grid-size").style.display = "none";
+      // document.getElementById("outer-box").style.display = "none";
+      // document.getElementById("grid-size").style.display = "none";
       document.getElementById("memory-game").style.display = "none";
       document.getElementById("new-box").style.display = "block";
       //this is new

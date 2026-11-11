@@ -65,15 +65,80 @@ body {
   }
 }
 
-#new-box {
-  /* background-color: rgb(218, 218, 127); */
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+/* #new-box {
+  background-color: rgb(218, 218, 127);
+  width: 30vw;
+  height: 30vh;
+  margin-left: 50%;
   justify-content: center;
   align-items: center;
-  display: none;
+} */
+
+
+
+
+
+#new-box {
+  background: linear-gradient(145deg, #252525, #414141);
+  width: 280px;
+  min-height: 280px;
+  padding: 25px;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  border-radius: 20px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
 }
+
+#new-box h2 {
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+#new-box p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+#new-box .win-icon {
+  font-size: 3.5rem;
+}
+
+#new-box button {
+  background: #d4af37;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#new-box button:hover {
+  background: #ffd700;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
 
 /* #winner {
   font-size: 2rem;
