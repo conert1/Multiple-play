@@ -257,3 +257,63 @@ input[type="button"]:hover {
 }
 
 
+
+
+
+
+
+
+
+#league {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 230px;
+  padding: 14px 40px 14px 16px;
+
+  background-color: rgba(20, 20, 20, 0.9);
+  color: white;
+
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+
+  cursor: pointer;
+  outline: none;
+
+  /* Custom dropdown arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23d4af37' viewBox='0 0 16 16'%3E%3Cpath d='M2 5l6 6 6-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+
+  transition: all 0.3s ease;
+}
+
+#league:hover {
+  background-color: rgba(45, 45, 45, 0.95);
+  border-color: #ffd700;
+  transform: scale(1.03);
+}
+
+#league:focus {
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+}
+
+#league option {
+  background-color: #202020;
+  color: white;
+  padding: 10px;
+}
+
+label[for="league"] {
+  display: block;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
