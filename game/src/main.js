@@ -22,7 +22,7 @@ class Game {
     }, 1000);
 
 
-    document.getElementById("outer-box").style.display ="block"
+    // document.getElementById("outer-box").style.display ="block"
 
     let fileNum = "psl"
     let stadium = ""

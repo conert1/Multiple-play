@@ -199,18 +199,38 @@ body {
 }
 
 
-
+/* 
 #grid-size {
+  background-color: black;
   font-family: Arial, sans-serif;
   text-align: left;
   height: max-content;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 20;
   background-color: transparent ; 
 
-  padding: 10px; 
+  padding: 100px; 
   z-index: 1000; 
+}
+   */
+
+
+   #grid-size {
+    margin-top: 160px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  z-index: 1000;
 }
 .small-input{
     background-color: transparent ; 
@@ -260,9 +280,13 @@ input[type="button"]:hover {
 
 
 
+.league-selector {
+  margin-top: 50px;
+}
 
-
-
+/* .league-selector{
+  padding-top: 20%;
+} */
 
 #league {
   appearance: none;

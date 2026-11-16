@@ -40,6 +40,8 @@ submitButton.addEventListener("click", () => {
   const newHeight = document.getElementById("height").value;
   const newLeague = document.getElementById("league").value;
   document.getElementById("grid-size").style.display = "none"
+  document.getElementById("outer-box").style.display ="block"
+  document.getElementById("memory-game").style.display="block"
   setupGame(newWidth, newHeight, newLeague);
 });
 document.addEventListener("DOMContentLoaded", () => {
