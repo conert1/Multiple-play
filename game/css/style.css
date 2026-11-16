@@ -92,7 +92,7 @@ body {
   gap: 12px;
 
   border-radius: 20px;
-  border: 2px solid #d4af37;
+  border: 2px solid #32CD32;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
   color: white;
@@ -101,7 +101,7 @@ body {
 }
 
 #new-box h2 {
-  color: #ffd700;
+  color: #32CD32;
   font-size: 1.8rem;
   margin: 0;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 #new-box button {
-  background: #d4af37;
+  background: #32CD32;
   color: #222;
   border: none;
   padding: 10px 20px;
@@ -127,54 +127,10 @@ body {
 }
 
 #new-box button:hover {
-  background: #ffd700;
+  background: #32CD32;
   transform: scale(1.05);
 }
 
-
-
-
-
-
-
-
-
-
-/* #winner {
-  font-size: 2rem;
-  font-weight: bold;
-  animation: colorCycle 3s linear infinite;
-}
-
-@keyframes colorCycle {
-  10% { color: rgb(102, 255, 0); }
-  20% { color: orange; }
-  30% { color: yellow; }
-  40% { color: green; }
-  50% { color: purple; }
- 60% { color: pink; }
- 70% { color: brown; }
-  80% { color: blue; }
-   90% { color: rgb(255, 0, 119); }
-    100% { color: rgb(0, 255, 55); }
- 
-} */
-
-#winner {
-  font-size: 3rem;
-  font-weight: bold;
-  background: linear-gradient(270deg, red, yellow, green, blue, orange, purple);
-  background-size: 1200% 1200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbow 5s ease infinite;
-}
-
-@keyframes rainbow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 
 
@@ -199,23 +155,6 @@ body {
 }
 
 
-/* 
-#grid-size {
-  background-color: black;
-  font-family: Arial, sans-serif;
-  text-align: left;
-  height: max-content;
-  position: fixed;
-  top: 0;
-  left: 20;
-  background-color: transparent ; 
-
-  padding: 100px; 
-  z-index: 1000; 
-}
-   */
-
-
    #grid-size {
     margin-top: 160px;
   font-family: Arial, sans-serif;
@@ -236,8 +175,16 @@ body {
     background-color: transparent ; 
 
 }
+ #heading-text{
+   font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 
-
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: white;
+    text-shadow: 3px 4px 6px #093f09;
+  
+}
 
 .small-input {
   width: 50px;
@@ -284,9 +231,7 @@ input[type="button"]:hover {
   margin-top: 50px;
 }
 
-/* .league-selector{
-  padding-top: 20%;
-} */
+
 
 #league {
   appearance: none;
@@ -298,7 +243,7 @@ input[type="button"]:hover {
   background-color: rgba(20, 20, 20, 0.9);
   color: white;
 
-  border: 2px solid #d4af37;
+  border: 3px solid #228B22;
   border-radius: 10px;
 
   font-size: 1rem;
@@ -308,22 +253,26 @@ input[type="button"]:hover {
   cursor: pointer;
   outline: none;
 
-  /* Custom dropdown arrow */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23d4af37' viewBox='0 0 16 16'%3E%3Cpath d='M2 5l6 6 6-6z'/%3E%3C/svg%3E");
+    background-image: linear-gradient(45deg, transparent 50%, #32CD32 50%),
+                    linear-gradient(135deg, #32CD32 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%,
+                       calc(100% - 14px) 50%;
+  background-size: 7px 7px;
   background-repeat: no-repeat;
-  background-position: right 15px center;
 
   transition: all 0.3s ease;
+
 }
 
 #league:hover {
   background-color: rgba(45, 45, 45, 0.95);
-  border-color: #ffd700;
+
+   border-color: #228B22;
   transform: scale(1.03);
 }
 
 #league:focus {
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 12px #228B22
 }
 
 #league option {
@@ -335,8 +284,9 @@ input[type="button"]:hover {
 label[for="league"] {
   display: block;
   color: white;
+  text-shadow: 3px 4px 6px #093f09;
   font-family: Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
   letter-spacing: 1px;
