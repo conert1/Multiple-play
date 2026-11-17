@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Umuzi-org/Conert-Mavuso-222-memory-game-in-vanilla-js-javascript#readme",
   "devDependencies": {
-    "jasmine": "^5.4.0",
+    "jasmine": "^5.13.0",
     "jsdom": "^25.0.1",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"

@@ -170,6 +170,6 @@ describe("Testing the configurable grid size", () => {
   });
 });
 
-describe("Timer test. ", ()=>{
+// describe("Timer test. ", ()=>{
   
-})
+// })
