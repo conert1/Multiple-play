@@ -1,4 +1,5 @@
-const { Game } = require("./main");
+// const { Game } = require("./main");
+import { Game } from "./main";
 
 const submitButton = document.getElementById("submit-btn");
 
@@ -49,4 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setupGame(4, 4, "betway-premiership");
 });
 
-module.exports = { width, height, league};
+// module.exports = { width, height, league};
+export { width, height, league };

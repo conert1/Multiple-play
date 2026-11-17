@@ -1,3 +1,4 @@
+import confetti from "canvas-confetti";
 class Game {
   constructor(width, height, league) {
     this.width = width;
@@ -141,6 +142,8 @@ class Game {
       this.enableClicks();
     }
 
+    
+
     this.hasWon();
 
     this.variables.prevOne = selectedNumOne;
@@ -195,6 +198,8 @@ class Game {
       document.getElementById("new-box").style.display = "block";
       //this is new
       document.getElementById("sec").innerHTML = `You took ${this.variables.seconds} seconds`;
+    
+      celebrate();
     }
   }
 
@@ -229,8 +234,48 @@ class Game {
   }
 }
 
-module.exports = { Game };
 
+
+
+
+
+
+
+
+
+
+
+
+
+function celebrate() {
+    const duration = 5 * 1000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 5,
+            angle: 60,
+            spread: 200,
+            origin: { x: 0 },
+            colors: ["#FFD700", "#FFFFFF", "#228B22"]
+        });
+
+        confetti({
+            particleCount: 5,
+            angle: 120,
+            spread: 200,
+            origin: { x: 1 },
+            colors: ["#FFD700", "#FFFFFF", "#228B22"]
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    })();
+}
+
+// module.exports = { Game };
+export {Game}
 /*
 
 1️⃣ Resize the Image (change pixel dimensions)
